@@ -61,6 +61,7 @@ void menu()
 /*初始化状态*/
 void setup(){
     hit = 0;
+    nTail=3;
     gameOver = false;
     /*根据当前时间设置“随机数种子”*/
     srand(time(nullptr));
@@ -261,19 +262,15 @@ void logic()
 
 int main(){
     menu();
-    system("cls");/*清除屏幕*/
     setup();
-    system("cls");/*清除屏幕*/
     draw();
     /*循环画贪吃蛇的界面*/
     while (!isExit) {
         while (!gameOver) {
-            system("cls");/*清除屏幕*/
             draw();
             input();
             logic();
             Sleep(sleepTime);
-            system("cls");/*清除屏幕*/
         }
         if (isExit){
             break;
