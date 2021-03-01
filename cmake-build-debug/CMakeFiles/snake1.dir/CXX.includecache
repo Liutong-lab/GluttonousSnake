@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/SeeE/CLionProjects/snake1/main.cpp
+cstdio
+-
+cstdlib
+-
+Windows.h
+-
+ctime
+-
+iostream
+-
+conio.h
+-
+
